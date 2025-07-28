@@ -30,16 +30,16 @@ Also make sure to add the app to your `INSTALLED_APPS` in `settings.py`.
 python manage.py runserver
 ```
 
-## To apply migrations
-
-```bash
-python manage.py migrate
-```
-
 ## To create migrations for your models
 
 ```bash
 python manage.py makemigrations
+```
+
+## To apply migrations
+
+```bash
+python manage.py migrate
 ```
 
 ## To create a superuser
