@@ -1,0 +1,17 @@
+{% extends 'template_app/base.html' %}
+
+{% block content %}
+<h1>My name is {{ name }}</h1>
+<p>I am {{ age }} years old.</p>
+
+{% if show_numbers %}
+    <h2>Numbers:</h2>
+    <ul>
+        {% for number in numbers %}
+            <li>{{ number }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No numbers to display.</p>
+{% endif %}
+{% endblock %}
