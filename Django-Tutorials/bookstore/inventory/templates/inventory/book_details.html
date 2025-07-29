@@ -1,0 +1,11 @@
+{% extends 'inventory/base.html' %}
+{% block title %}{{ book.title }} Details{% endblock %}
+
+{% block content %}
+    <h1>{{ book.title }} Details</h1>
+    <p>Author: {{ book.author }}</p>
+    <p>Price: ${{ book.price }}</p>
+    <p>Published Date: {{ book.published_date }}</p>
+
+    <a href="{% url 'book_list' %}" class="btn btn-primary">Back to Book List</a>
+{% endblock %}
